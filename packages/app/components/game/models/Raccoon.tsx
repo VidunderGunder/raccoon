@@ -108,10 +108,28 @@ export default forwardRef<Mesh, BoxProps>(function Raccoon(
           color="#434353"
         />
 
-        <Cuxel position={[0, -0.2, -0.55]} scale={[3, 3, 1]} color="#34343d" />
-        <Cuxel position={[0, -0.2, -0.675]} scale={[3, 3, 1]} color="#434353" />
-        <Cuxel position={[0, -0.2, -0.8]} scale={[3, 3, 1]} color="#34343d" />
-
+        <mesh scale={[0.9, 0.9, 0.9]} position={[0, -0.025, -0.05]}>
+          <Cuxel
+            position={[0, -0.225, -0.55]}
+            scale={[2.675, 2.675, 1]}
+            color="#34343d"
+          />
+          <Cuxel
+            position={[0, -0.2, -0.675]}
+            scale={[3, 3, 1]}
+            color="#595969"
+          />
+          <Cuxel
+            position={[0, -0.2, -0.8]}
+            scale={[3.125, 3.125, 1]}
+            color="#34343d"
+          />
+          <Cuxel
+            position={[0, -0.225, -0.925]}
+            scale={[2.5, 2.5, 1]}
+            color="#595969"
+          />
+        </mesh>
         <boxGeometry args={[1, 0.8, 1]} />
         <meshStandardMaterial color={"#434353"} opacity={hovered ? 0.8 : 1} />
       </mesh>
