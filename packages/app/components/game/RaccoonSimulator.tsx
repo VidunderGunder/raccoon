@@ -63,23 +63,23 @@ const Raccoon = () => {
         const newYRotation = oldYRotation + random;
 
         await next({
-          position: [0, squeezed ? 0.05 : 0.175, 0],
+          position: [0, squeezed ? 0.025 : 0.1, 0],
           rotation: [0, newYRotation, 0],
           config: {
-            velocity: [0, 0.002, 0],
-            damping: 0.5,
+            velocity: [0, 0.001, 0],
+            damping: 0.75,
             clamp: true,
-            tension: 80,
-            friction: 14,
+            tension: 100,
+            friction: 10,
           },
-          delay: 1000,
+          delay: 2000,
         });
         await next({
-          position: [0, 0, 0],
+          position: [0, squeezed ? -0.05 : 0, 0],
           config: {
-            damping: 0.5,
+            damping: 0.25,
             clamp: true,
-            tension: 150,
+            tension: 100,
             friction: 10,
           },
         });
@@ -116,11 +116,14 @@ const Raccoon = () => {
         onPointerDown={() => {
           setSqueezed(true);
           mesh.current?.scale.set(1, 0.5, 1);
+          mesh.current?.position.set(0, -0.05, 0);
         }}
         onPointerUp={() => {
+          mesh.current?.position.set(0, 0, 0);
           setSqueezed(false);
         }}
         onPointerLeave={() => {
+          mesh.current?.position.set(0, 0, 0);
           setSqueezed(false);
         }}
       />
