@@ -88,10 +88,6 @@ const Raccoon = () => {
     config: {
       mass: 1,
     },
-    onRest: () => {
-      // mesh.current?.scale.set(1, 1, 1);
-      // setSqueezed(false);
-    },
   });
 
   // Make Raccoon jump every 3 seconds using react-three-fiber
@@ -119,12 +115,12 @@ const Raccoon = () => {
           mesh.current?.position.set(0, -0.05, 0);
         }}
         onPointerUp={() => {
-          mesh.current?.position.set(0, 0, 0);
           setSqueezed(false);
+          mesh.current?.position.set(0, 0, 0);
         }}
         onPointerLeave={() => {
-          mesh.current?.position.set(0, 0, 0);
           setSqueezed(false);
+          mesh.current?.position.set(0, 0, 0);
         }}
       />
     </>
