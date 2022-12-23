@@ -1,0 +1,34 @@
+{
+  "name": "@acme/next",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
+    "lint": "NODE_OPTIONS=--openssl-legacy-provider next lint",
+    "clean": "rm -rf .next node_modules ../../.expo/web/cache"
+  },
+  "dependencies": {
+    "@acme/api": "0.1.0",
+    "@acme/app": "0.1.0",
+    "@expo/next-adapter": "^4.0.13",
+    "@zeit/next-source-maps": "^0.0.3",
+    "@trpc/client": "^10.6.0",
+    "@trpc/server": "^10.6.0",
+    "dotenv": "^16.0.3",
+    "next": "^13.0.7",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "raf": "^3.4.1",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.17",
+    "eslint-config-next": "13.0.7",
+    "next-compose-plugins": "^2.2.1",
+    "next-fonts": "^1.5.1",
+    "next-images": "^1.8.4",
+    "next-transpile-modules": "10.0.0"
+  }
+}

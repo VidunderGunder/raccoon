@@ -1,0 +1,15 @@
+{
+  "name": "@acme/scripts",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "syncroutes": "ts-node syncroutes.ts",
+    "dev": "ts-node syncroutes-watcher.ts",
+    "killports": "ts-node killports.ts"
+  },
+  "dependencies": {
+    "@acme/db": "0.1.0"
+  },
+  "devDependencies": {}
+}
