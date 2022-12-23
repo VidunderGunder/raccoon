@@ -8,6 +8,7 @@
     "@clerk/clerk-react": "^4.7.0",
     "@clerk/nextjs": "^4.6.14",
     "@dripsy/gradient": "^3.8.1",
+    "@react-spring/three": "^9.6.1",
     "@react-three/fiber": "^8.9.1",
     "@shopify/flash-list": "^1.4.0",
     "@shopify/react-native-skia": "^0.1.157",

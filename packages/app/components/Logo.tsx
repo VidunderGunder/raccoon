@@ -29,15 +29,7 @@ export default forwardRef<LogoType, LogoProps>(function Logo(
           paddingBottom: 1,
         }}
       >
-        Create{" "}
-        <Text
-          sx={(theme) => ({
-            color: theme.colors.$primary,
-          })}
-        >
-          XP
-        </Text>{" "}
-        App
+        Raccoon Simulator
       </Text>
       {children}
     </View>
