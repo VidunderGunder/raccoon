@@ -44,7 +44,7 @@ export default forwardRef<SafeAreaViewType, Props>(function MainLayout(
           >
             {children}
           </View>
-          <Navigation />
+          {/* <Navigation /> */}
         </View>
       </SafeAreaView>
     </>

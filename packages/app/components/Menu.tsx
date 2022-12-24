@@ -89,6 +89,7 @@ const NavigationButton = forwardRef<ButtonType, NavigationButtonProps>(
             sx={{
               fontSize: 24,
               fontWeight: "bold",
+              userSelect: "none",
             }}
           >
             {children}
